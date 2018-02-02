@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <children>
+      <BorderPane prefHeight="429.0" prefWidth="526.0">
+         <top>
+            <ToolBar prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: rgb(132,2,2);" BorderPane.alignment="CENTER" />
+         </top>
+         <center>
+            <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+              <tabs>
+                <Tab closable="false" text="Review">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-border-color: rgb(145, 5, 5);">
+                           <children>
+                              <TextArea editable="false" layoutX="256.0" layoutY="14.0" prefHeight="330.0" prefWidth="256.0" wrapText="true" />
+                              <ChoiceBox layoutX="57.0" layoutY="90.0" prefWidth="150.0" />
+                              <ChoiceBox layoutX="57.0" layoutY="155.0" prefWidth="150.0" />
+                              <Button layoutX="106.0" layoutY="264.0" mnemonicParsing="false" text="Launch" />
+                              <Label layoutX="118.0" layoutY="62.0" text="Month" />
+                              <Label layoutX="119.0" layoutY="129.0" text="Year" />
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                <Tab closable="false" text="Add Entry">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <ChoiceBox layoutX="83.0" layoutY="76.0" prefWidth="150.0" />
+                              <ChoiceBox layoutX="83.0" layoutY="141.0" prefWidth="150.0" />
+                              <Label layoutX="146.0" layoutY="43.0" text="Year" />
+                              <Label layoutX="140.0" layoutY="111.0" text="Month" />
+                              <TextField layoutX="84.0" layoutY="216.0" />
+                              <TextField layoutX="84.0" layoutY="280.0" />
+                              <Label layoutX="128.0" layoutY="188.0" text="Description" />
+                              <Label layoutX="146.0" layoutY="255.0" text="Price" />
+                              <Button layoutX="339.0" layoutY="141.0" mnemonicParsing="false" text="Add Entry" />
+                              <Button layoutX="333.0" layoutY="216.0" mnemonicParsing="false" text="Delete Entry" />
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+              </tabs>
+            </TabPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
